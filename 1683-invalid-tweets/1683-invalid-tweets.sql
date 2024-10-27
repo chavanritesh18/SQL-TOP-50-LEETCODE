@@ -1,6 +1,11 @@
 # Write your MySQL query statement below
 
+-- select tweet_id 
+-- from tweets
+-- where length(content) > 15;
 
-SELECT tweet_id FROM Tweets
+-- USING CHAR_LENGTH METHOD
 
-WHERE LENGTH(content) > 15;
+select tweet_id 
+from tweets
+where char_length(content) > 15;
